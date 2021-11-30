@@ -1,7 +1,7 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import type { NextApiRequest, NextApiResponse } from 'next';
 import {getChannelMessages} from '../../../services/messages';
-import { withApiErrorHandler } from '../../../utils/withApiErrorHandler';
+import { withApiErrorHandler } from '../../../utils/server/withApiErrorHandler';
 
 export default withApiErrorHandler(async function getChannelMessagesHandler(
   req: NextApiRequest,
