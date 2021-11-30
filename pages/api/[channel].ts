@@ -3,7 +3,7 @@ import type { NextApiRequest, NextApiResponse } from 'next';
 import {addChannelMessage} from '../../services/messages';
 import { withApiErrorHandler } from '../../utils/withApiErrorHandler';
 
-export default withApiErrorHandler(async function getChannelMessagesHandler(
+export default withApiErrorHandler(async function addChannelMessageHanlder(
   req: NextApiRequest,
   res: NextApiResponse<readonly string[]>
 ) {
